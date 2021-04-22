@@ -1,0 +1,15 @@
+header.header{
+    .container{
+        display: flex;
+    }
+    .logo{
+        max-width: 128px;
+    }
+
+    .nav{
+        .nav-link{
+            font-weight: 600;
+            color: $grey;
+        }
+    }
+}
