@@ -9,7 +9,29 @@ header.header{
     .nav{
         .nav-link{
             font-weight: 600;
-            color: $grey;
+            color: lighten($grey, 10);
+            position: relative;
+            @include trans;
+
+            &:after{
+                content: '';
+                position: absolute;
+                top: 50%;
+                left: calc(50% - 2rem);
+                width: 4rem;
+                transform: scale(0);
+                transform-origin: center;
+                @include trans;
+                height: .125rem;
+                background-color: $blue;
+            }
+            &:hover{
+                color: lighten($blue, 0);  
+                &:after{
+                    top: 100%;
+                    transform: scale(1);
+                } 
+            }
         }
     }
 }

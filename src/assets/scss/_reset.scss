@@ -16,3 +16,27 @@ $body: #535456;
 // =================================================== 
 // MIXINS 
 // ===================================================
+@mixin trans {
+    transition: 0.25s ease;
+    -webkit-animation: 0.25s ease;
+    -o-animation: 0.25s ease;
+    -moz-animation: 0.25s ease;
+}
+
+.fw-800{
+    font-weight: 800;
+}
+
+.fw-600{
+    font-weight: 600;
+}
+
+.fw-400{
+    font-weight: 400;
+}
+.t-orange{
+    color: $orange;
+}
+.t-blue{
+    color: $blue;
+}

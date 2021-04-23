@@ -1,0 +1,17 @@
+.hero{
+    padding-top: 3rem;
+    position: relative;
+    // overflow: hidden;
+    padding-bottom: 5rem;
+    &::before{
+        content: '';
+        position: absolute;
+        left: 0;
+        top: -8rem;
+        width: 60%;
+        bottom: 0%;
+        background-color: rgba($blue, 12%);
+        display: block;
+        border-bottom-right-radius: 2rem;
+    }
+}
