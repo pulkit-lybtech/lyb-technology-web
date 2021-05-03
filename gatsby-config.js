@@ -28,8 +28,18 @@ module.exports = {
         icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
       },
     },
-    `gatsby-plugin-gatsby-cloud`,
-    `gatsby-plugin-sass`
+    // `gatsby-plugin-gatsby-cloud`,
+    `gatsby-plugin-sass`,
+    // gatsby-config.js
+
+    {
+      resolve: 'gatsby-source-graphcms',
+      options: {
+        // endpoint: process.env.GRAPHCMS_ENDPOINT,
+        endpoint: `https://api-ap-northeast-1.graphcms.com/v2/cko83vyzfkdd901z125oj7twr/master`,
+        typePrefix: `graphCMS`
+      },
+    }
     
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline

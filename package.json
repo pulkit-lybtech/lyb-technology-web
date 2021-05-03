@@ -1,31 +1,36 @@
 {
-  "name": "gatsby-starter-default",
+  "name": "lyb-technology",
   "private": true,
-  "description": "A simple starter to get up and developing quickly with Gatsby",
+  "description": "Talking about today�s needs, it becomes quite difficult to find out suitable web development companies. Here we present a top web development company in India",
   "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "author": "Pulkit Singh <pulkitsingh302@gmail.com>",
   "dependencies": {
     "gatsby": "^3.3.1",
     "gatsby-plugin-gatsby-cloud": "^2.2.0",
-    "gatsby-plugin-image": "^1.2.1",
+    "gatsby-plugin-image": "^1.4.0",
     "gatsby-plugin-manifest": "^3.2.0",
     "gatsby-plugin-offline": "^4.2.0",
     "gatsby-plugin-react-helmet": "^4.2.0",
     "gatsby-plugin-sass": "^4.3.0",
     "gatsby-plugin-sharp": "^3.2.1",
     "gatsby-source-filesystem": "^3.2.0",
+    "gatsby-source-graphcms": "^2.5.2",
     "gatsby-transformer-sharp": "^3.2.0",
+    "moment": "^2.29.1",
     "prop-types": "^15.7.2",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "react-helmet": "^6.1.0",
-    "sass": "^1.32.11"
+    "react-icons": "^4.2.0",
+    "react-slick": "^0.28.1",
+    "sass": "^1.32.11",
+    "slick-carousel": "^1.8.1"
   },
   "devDependencies": {
     "prettier": "2.2.1"
   },
   "keywords": [
-    "gatsby"
+    "Web design and development companies, top web Development Company in India"
   ],
   "license": "0BSD",
   "scripts": {
@@ -39,7 +44,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/gatsbyjs/gatsby-starter-default"
+    "url": "https://github.com/pulkit-lyb/gatsby-starter-default"
   },
   "bugs": {
     "url": "https://github.com/gatsbyjs/gatsby/issues"

@@ -2,16 +2,34 @@
 // VARIABLES 
 // =================================================== 
 $grey: #454647;
+$gray-600: #454647;
 $blue: #4A63FE;
 $orange: #F2994A;
 $light: #E9ECFF;
+$gray-200: #E9ECFF;
 $light-blue: #E1F2FE;
 $dark: #01172F;
+$gray-700: #01172F;
 $text: #3A3B3F;
 $body: #535456;
+$white: #fff;
+$purple: #EF3DDD;
+ // Small screen / phone
+ $sm: 576px;
+ // Medium screen / tablet
+ $md: 768px;
+ // Large screen / desktop
+ $lg: 992px;
+ // Extra large screen / wide desktop
+ $xl: 1200px;
+ 
 
-
-
+ @mixin mq($xy) {
+    @media only screen and (max-width: $xy){
+        @content;
+    }
+ }
+ 
 
 // =================================================== 
 // MIXINS 
@@ -22,6 +40,13 @@ $body: #535456;
     -o-animation: 0.25s ease;
     -moz-animation: 0.25s ease;
 }
+@mixin center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
 
 .fw-800{
     font-weight: 800;
@@ -39,4 +64,28 @@ $body: #535456;
 }
 .t-blue{
     color: $blue;
+}
+
+.btn{
+    @include trans;
+}
+.btn-primary{
+    color: $white !important;
+    background-color: $blue;
+    border-radius: 4px;
+}
+
+.text-dark{
+    color: $dark;
+}
+
+.mt-6{
+    margin-top: 8rem;
+}
+.mt-6{
+    margin-bottom: 8rem;
+}
+
+.text-purple{
+    color: $purple;
 }

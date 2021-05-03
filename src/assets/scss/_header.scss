@@ -1,12 +1,40 @@
 header.header{
+    position: relative;
+    &::before{
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background: #fff;
+        z-index: -1;
+        transform: translateY(-100%);
+        box-shadow: 0 4px 18px #0001;
+        @include trans;
+    }
+    
+    &.active{
+        position: sticky;
+        &::before{
+            transform: translateY(0%);
+        }
+    }
+
     .container{
         display: flex;
     }
+
     .logo{
         max-width: 128px;
     }
 
     .nav{
+        display: flex;
+        @include mq($lg){
+            display: none;
+            flex-direction: column;
+        }
         .nav-link{
             font-weight: 600;
             color: lighten($grey, 10);
