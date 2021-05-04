@@ -26,6 +26,16 @@ exports.createPages = async function ({ actions, graphql }) {
               }
             }
           }
+
+          allGraphCmsProject {
+            edges {
+              node {
+                id
+                slug
+                title
+              }
+            }
+          }
       }
     `)
     data.allGraphCmsPost.edges.forEach(edge => {
@@ -36,4 +46,18 @@ exports.createPages = async function ({ actions, graphql }) {
         context: { slug: slug },
       })
     })
+
+
+    data.allGraphCmsProject.edges.forEach(edge => {
+      const slug = edge.node.slug
+      actions.createPage({
+        path: `projects/${slug}`,
+        component: require.resolve(`./src/templates/projects.js`),
+        context: { slug: slug },
+      })
+    })
   }
+
+
+
+  

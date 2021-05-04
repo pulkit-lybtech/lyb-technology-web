@@ -455,8 +455,53 @@ footer.main-footer{
             font-weight: 600;
             letter-spacing: normal;
         }
+    }
 
-        
+    .projects-all{
+        margin-top: -4rem;
+        margin-bottom: 7rem;
+
+        .card{
+            background-color: unset;
+            border-radius: .375rem;
+            width: 100%;
+            margin-bottom: 2.5rem;
+            border: 0;
+            
+            &:hover{
+                .card-img-top{
+                    transform: scale(1.05);
+                }
+            }
+            .card-zoom{
+                overflow: hidden!important;
+                border-radius: inherit;
+            }
+            .card-img-top{
+                -webkit-transition: all .3s ease;
+                transition: all .3s ease;
+                -webkit-transform-origin: center center;
+                transform-origin: center center;
+                box-shadow: 0 1.5rem 4rem rgba(22,28,45,.05)!important;
+            }
+            h6.text-uppercase{
+                letter-spacing: .08em;
+                color: #869ab8!important;
+                text-decoration: none;
+            }
+            h4.card-title{
+                line-height: 1.45;
+                font-size: 1.0625rem;
+                text-decoration: none;
+            }
+            .card-footer{
+                padding-left: 0;
+                padding-right: 0;
+                background: unset;
+                border: 0;
+                border-radius: 0 0 calc(.375rem - 0px) calc(.375rem - 0px);
+            }
+        }
     }
 }
 
@@ -550,3 +595,4 @@ footer.main-footer{
         }
     }
 }
+
