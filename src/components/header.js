@@ -11,11 +11,15 @@ const Header = ({ siteTitle }) => {
   
   
 
-  window.addEventListener("scroll", () => {
-    // console.log( window.scrollY);
-    if(window.scrollY > 350) setActive(true)
-    else setActive(false)
-  })
+  React.useEffect(() => {
+    return () => {
+      window.addEventListener("scroll", () => {
+        // console.log( window.scrollY);
+        if(window.scrollY > 350) setActive(true)
+        else setActive(false)
+      })  
+    }
+  }, [])
   
   return (
     (
