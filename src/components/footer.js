@@ -121,10 +121,10 @@ export default function footer() {
             <div className="inner">
               <h4 className="title">Services </h4>
               <nav className="nav flex-column">
-                <Link to="portfolio" className="nav-link pl-0">Website Design </Link>
-                <Link to="/blogs" className="nav-link pl-0">App Development</Link>
-                <Link to="/about" className="nav-link pl-0">Web Development</Link>
-                <Link to="/about" className="nav-link pl-0">Digital Marketing</Link>
+                <Link to="/portfolio" className="nav-link pl-0">Website Design </Link>
+                <Link to="/services/app-development" className="nav-link pl-0">App Development</Link>
+                <Link to="/services/web-development" className="nav-link pl-0">Web Development</Link>
+                <Link to="/services/digital-marketing" className="nav-link pl-0">Digital Marketing</Link>
               </nav>
             </div>
           </div>
@@ -146,8 +146,7 @@ export default function footer() {
             <div className="col-lg-6">
               <nav className="nav w-100 justify-content-center justify-content-lg-end mb-5 mb-lg-0">
                 <Link className="nav-link" to="/terms">Terms &amp; Conditions</Link>
-                <Link className="nav-link" to="/privacy-policy">Privacy Policy</Link>
-                <Link className="nav-link" to="/privacy-policy">Sitemap</Link>
+                <Link className="nav-link" to="/privacy">Privacy Policy</Link>
               </nav>
             </div>
 

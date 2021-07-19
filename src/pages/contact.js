@@ -2,7 +2,9 @@ import * as React from "react"
 
 import Layout from "../components/layout"
 import Seo from "../components/seo"
-
+import con1 from "../assets/images/ccon (1).svg"
+import con2 from "../assets/images/ccon (2).svg"
+import con3 from "../assets/images/ccon (3).svg"
 
 
 const Contact = () => (
@@ -20,7 +22,6 @@ const Contact = () => (
                                 We’re here to Help
                                 </h1>
                                 <p className="lead">
-                                    
                                 Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. 
                                 </p>
                             </div>
@@ -36,6 +37,7 @@ const Contact = () => (
                         <div class="col-md-4">
                             <div class="contact-card">
                                 <div class="icon d-flex ">
+                                    <img src={con1} className="mx-auto" alt="icon" />
                                 </div>
                                 <div class="cont text-center">
                                     <h5>Knowledgebase</h5>
@@ -51,6 +53,8 @@ const Contact = () => (
                         <div class="col-md-4">
                             <div class="contact-card">
                                 <div class="icon d-flex ">
+                                <img src={con2} className="mx-auto" alt="icon" />
+
                                 </div>
                                 <div class="cont text-center">
                                     <h5>Support</h5>
@@ -66,6 +70,8 @@ const Contact = () => (
                         <div class="col-md-4">
                             <div class="contact-card">
                                 <div class="icon d-flex ">
+                                <img src={con3} className="mx-auto" alt="icon" />
+
                                 </div>
                                 <div class="cont text-center">
                                     <h5>FAQ</h5>
@@ -98,14 +104,14 @@ const Contact = () => (
                                     <fieldset class="form-row">
                                         <label for="#" class="col-md-6 mb-4">
                                             Name
-                                            <input type="text" placeholder="Pulkit Singh" class="form-control" required />
+                                            <input type="text" placeholder="Name " class="form-control" required />
                                             <div class="invalid-feedback">
                                                 Please enter your name
                                             </div>
                                         </label>
                                         <label for="#" class="col-md-6 mb-4">
                                             Email
-                                            <input type="email" placeholder="rajkumar@gmail.com" class="form-control"
+                                            <input type="email" placeholder="Email Address" class="form-control"
                                                 required />
                                             <div class="invalid-feedback">
                                                 Please enter a valid email
@@ -115,7 +121,7 @@ const Contact = () => (
                                     <fieldset class="form-row">
                                         <label for="#" class="col-md-6 mb-4">
                                             Subject
-                                            <input type="text" placeholder="HR Recruitment" class="form-control"
+                                            <input type="text" placeholder="Website development " class="form-control"
                                                 required />
                                             <div class="invalid-feedback">
                                                 Please enter a subject
@@ -123,7 +129,7 @@ const Contact = () => (
                                         </label>
                                         <label for="#" class="col-md-6 mb-4">
                                             Phone Number
-                                            <input type="tel" placeholder="70114651394" class="form-control" required />
+                                            <input type="tel" placeholder="Phone Number" class="form-control" required />
                                             <div class="invalid-feedback">
                                                 Please enter your phone Number
                                             </div>

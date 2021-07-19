@@ -21,27 +21,22 @@ header.header{
         }
     }
 
-    .container{
-        display: flex;
-    }
+   
 
     .logo{
         max-width: 128px;
     }
 
-    .nav{
-        display: flex;
-        @include mq($lg){
-            display: none;
-            flex-direction: column;
-        }
+    .navbar{
+        margin-right: auto;
         .nav-link{
-            font-weight: 600;
+            font-weight: 500;
+            padding: .5rem 1rem;
             color: lighten($grey, 10);
             position: relative;
+            font-size: 16px;
             @include trans;
-
-            &:after{
+            &:before{
                 content: '';
                 position: absolute;
                 top: 50%;
@@ -55,7 +50,7 @@ header.header{
             }
             &:hover{
                 color: lighten($blue, 0);  
-                &:after{
+                &:before{
                     top: 100%;
                     transform: scale(1);
                 } 

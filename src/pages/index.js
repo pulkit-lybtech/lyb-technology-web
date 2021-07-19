@@ -11,18 +11,21 @@ import AboutTeam from "../components/AboutTeam"
 import OurWork from "../components/OurWork"
 import OurTeam from "../components/OurTeam"
 import OurBlogs from "../components/OurBlogs"
+import { graphql } from "gatsby"
 
-const IndexPage = () => (
+const IndexPage = ( { data } ) => (
   <Layout>
+    {console.log(data)}
     <Seo title="Home" />
     
     <Hero />
     <Services />
     <AboutTeam />
     <Process />
-    <OurWork />
+    <OurWork work={data.allGraphCmsProject} />
     <OurTeam />
     <OurBlogs />
+  
 
     {/* <p>
       <Link to="/page-2/">Go to page 2</Link> <br />
@@ -30,5 +33,48 @@ const IndexPage = () => (
 
   </Layout>
 )
+
+
+export const query = graphql`
+  {
+    allGraphCmsPost {
+      edges {
+        node {
+          id
+          title
+          slug
+          publishedAt
+          coverImage {
+            gatsbyImageData
+          }
+        }
+      }
+    }
+    allGraphCmsProject {
+      edges {
+        node {
+          id
+          title
+          toolsTechnology
+          projectImage {
+            gatsbyImageData
+          }
+        }
+      }
+    }
+    allGraphCmsAuthor {
+      edges {
+        node {
+          id
+          name
+          title
+          picture {
+            gatsbyImageData
+          }
+        }
+      }
+    }
+  }
+`
 
 export default IndexPage

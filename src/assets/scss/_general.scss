@@ -581,4 +581,43 @@
     }
   }
 
-  
+
+  .develop{
+    .page-header{
+        margin-top: -6rem;
+        padding: 6rem 0 3rem;
+        background: rgba(74, 95, 254, 0.1);
+    }
+
+ 
+  }
+
+  .content{
+    .middle-item{
+        margin-bottom: 30px;
+        -webkit-box-shadow: 0 0 20px 0 #f1f1f1;
+        box-shadow: 0 0 20px 0 #f1f1f1;
+        border-radius: 5px;
+        padding: 30px;
+        vertical-align: middle;
+        position: relative;
+        h4 {
+            display: inline-block;
+            font-size: 18px;
+            font-weight: 600;
+            color: var(--purple);
+            margin-bottom: 0;
+            vertical-align: middle;
+        }   
+         span {
+            display: inline-block;
+            position: absolute;
+            right: 5px;
+            bottom: 5px;
+            font-size: 58px;
+            line-height: 58px;
+            z-index: -1;
+            color: #f2f2f2;
+        }
+    }
+  }
