@@ -29,6 +29,9 @@ header.header{
 
     .navbar{
         margin-right: auto;
+        @media screen and (max-width: 971px) {
+            padding-bottom: 3rem;
+        }
         .nav-link{
             font-weight: 500;
             padding: .5rem 1rem;
@@ -36,6 +39,12 @@ header.header{
             position: relative;
             font-size: 16px;
             @include trans;
+            @media screen and (max-width: 971px) {
+                font-size: 20px;
+                text-align: center;
+                padding: .95rem 1rem;
+            }
+            
             &:before{
                 content: '';
                 position: absolute;
@@ -48,7 +57,7 @@ header.header{
                 height: .125rem;
                 background-color: $blue;
             }
-            &:hover{
+            &:hover,&.active{
                 color: lighten($blue, 0);  
                 &:before{
                     top: 100%;

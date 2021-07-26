@@ -9,7 +9,9 @@ const Header = ({ siteTitle }) => {
 
   const [active, setActive] = React.useState(false);
   
-  
+  function isActive( {isCurrent} ) {
+    return isCurrent ? {className: "nav-link active"} : null
+  }
   
 
   React.useEffect(() => {
@@ -68,20 +70,23 @@ const Header = ({ siteTitle }) => {
             <Navbar.Collapse id="responsive-navbar-nav">
               <Nav className="ml-auto">
 
-                <Nav.Link to="/about">About</Nav.Link>
+                <Link className="nav-link" getProps={isActive} to="/about">About</Link>
+               
                 <NavDropdown title="Services" id="collasible-nav-dropdown" className="border-0">
                   <Link className="dropdown-item" to="/services/web-development">Website Development</Link>
-                  <Link className="dropdown-item"  to="/services/app-development">App Development</Link>
-                  <Link className="dropdown-item"  to="/services/e-commerce-development">E-Commerce Development</Link>
-                  <Link className="dropdown-item"  to="/services/erp-crm-development">ERP &amp; CRM Development</Link>
-                  <Link className="dropdown-item"  to="/services/digital-marketing-branding">Digital Marketing &amp; Branding </Link>
+                  <Link className="dropdown-item" to="/services/app-development">App Development</Link>
+                  <Link className="dropdown-item" to="/services/e-commerce-development">E-Commerce Development</Link>
+                  <Link className="dropdown-item" to="/services/erp-crm-development">ERP &amp; CRM Development</Link>
+                  <Link className="dropdown-item" to="/services/digital-marketing-branding">Digital Marketing &amp; Branding </Link>
                   <NavDropdown.Divider />
-                  <Link className="dropdown-item"  to="services/ai-machine-learning">AI &amp; Machine Learning</Link>
+                  <Link className="dropdown-item" to="/services/ai-machine-learning">AI &amp; Machine Learning</Link>
+                  <Link className="dropdown-item" to="/services"> All Services </Link>
                 </NavDropdown>
-                <Nav.Link to="/portfolio">Portfolio</Nav.Link>
-                <Nav.Link to="/blogs">Blogs</Nav.Link>
+
+                <Link className="nav-link" getProps={isActive} to="/portfolio">Portfolio</Link>
+                <Link className="nav-link" getProps={isActive} to="/blogs">Blogs</Link>
                 <Link to="/contact" className="d-none d-lg-block btn btn-primary rounded ml-4"> Contact Us</Link>
-                <Nav.Link to="/contact" className="d-block d-lg-none "> Contact Us</Nav.Link>
+                <Link to="/contact"className="d-block nav-link d-lg-none "> Contact Us</Link>
 
               </Nav>
             </Navbar.Collapse>

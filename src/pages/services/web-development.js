@@ -9,9 +9,7 @@ import webDevelop2 from '../../assets/images/Website setup-amico.svg'
 import webDevelop3 from '../../assets/images/QA engineers-amico.svg'
 import webDevelop6 from '../../assets/images/Developer activity-amico.png'
 
-
-
-
+import { FcEditImage, FcInfo, FcProcess } from 'react-icons/fc'
 
 export default function webDevelopment() {
     return (
@@ -80,22 +78,22 @@ export default function webDevelopment() {
 
                                 <div class="col-sm-6 col-lg-4">
                                     <div class="middle-item">
-                                        <i class="flaticon-vector"></i>
-                                        <h4>Strategy Planning</h4>
+                                        <FcEditImage />
+                                        <h4>Requirements <br /> Analysis </h4>
                                         <span>01</span>
                                     </div>
                                 </div>
                                 <div class="col-sm-6 col-lg-4">
                                     <div class="middle-item">
-                                        <i class="flaticon-vector"></i>
-                                        <h4>Development</h4>
+                                        <FcInfo />
+                                        <h4>Design &amp; <br /> Development </h4>
                                         <span>02</span>
                                     </div>
                                 </div>
                                 <div class="col-sm-6 col-lg-4">
                                     <div class="middle-item">
-                                        <i class="flaticon-vector"></i>
-                                        <h4>Deploy</h4>
+                                        <FcProcess />
+                                        <h4>Deploy &amp; <br /> Testing </h4>
                                         <span>03</span>
                                     </div>
                                 </div>

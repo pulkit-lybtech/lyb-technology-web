@@ -140,6 +140,7 @@
             .icon{
                 background-color: $white;
                 opacity: 1;
+                color: var(--primary);
             }
             .card-text,.card-title{
                 color: $white;
@@ -152,8 +153,7 @@
         }
         .icon{
             margin-bottom: 2rem;
-            background: #F2994A;
-            opacity: 0.3;
+            background: #f6e5d7;
             width: 90px;
             height: 90px;
             border-radius: 0px 16px;
@@ -181,14 +181,16 @@
 }
 
 .process{
-    margin-top: 5rem;
+    padding-top: 4rem;
+    padding-bottom: 2rem;
     position: relative;
+    background-color: #f4f5ff;
     .bg-wire{
         width: 100%;
         height: 180px;
         left: -1rem;
         top: 13rem;
-
+        opacity: .3;
         @include mq($lg){
             display: none;
         }
@@ -598,7 +600,7 @@
         -webkit-box-shadow: 0 0 20px 0 #f1f1f1;
         box-shadow: 0 0 20px 0 #f1f1f1;
         border-radius: 5px;
-        padding: 30px;
+        padding: 24px;
         vertical-align: middle;
         position: relative;
         h4 {
@@ -609,6 +611,16 @@
             margin-bottom: 0;
             vertical-align: middle;
         }   
+        svg{
+            display: inline-block;
+            font-size: 45px;
+            width: 45px;
+            height: 45px;
+            line-height: 45px;
+            color: #ff4900;
+            margin-right: 10px;
+            vertical-align: middle;
+        }
          span {
             display: inline-block;
             position: absolute;
@@ -621,3 +633,16 @@
         }
     }
   }
+  .privacy {
+    background: #f7f7fb;
+    padding: 2rem 0 5rem;
+    .privacy .page-white {
+        position: relative;
+        margin: 4rem auto;
+    }
+
+    article p {
+        color: #495057;
+        line-height: 1.855566;
+    }
+}

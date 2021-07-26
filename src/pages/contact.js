@@ -5,6 +5,7 @@ import Seo from "../components/seo"
 import con1 from "../assets/images/ccon (1).svg"
 import con2 from "../assets/images/ccon (2).svg"
 import con3 from "../assets/images/ccon (3).svg"
+import { Link } from "gatsby"
 
 
 const Contact = () => (
@@ -22,7 +23,7 @@ const Contact = () => (
                                 We’re here to Help
                                 </h1>
                                 <p className="lead">
-                                Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. 
+                                Please contact us using the form and we’ll get back to you as soon as possible.
                                 </p>
                             </div>
                         </div>
@@ -46,7 +47,7 @@ const Contact = () => (
                                     </p>
                                 </div>
                                 <div class="foot">
-                                    <a href="#"> Contact Support <i class="fa-external-link fa"></i> </a>
+                                    <Link to="/contact"> Contact Support <i class="fa-external-link fa"></i> </Link>
                                 </div>
                             </div>
                         </div>
@@ -147,6 +148,9 @@ const Contact = () => (
                                             </div>
                                         </label>
                                     </fieldset>
+                                    <small className="text-muted">
+                                    Please, let us know any particular things to check and the best time to contact you by phone (if provided
+                                    </small>
                                     <fieldset class="form-row mt-4">
                                         <button type="submit"
                                             class="btn submit mx-auto px-5 rounded-lg btn-primary btn-lg">Send</button>
