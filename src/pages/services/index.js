@@ -75,7 +75,7 @@ const ServicePage = () => (
                                     <img src={icon2} alt="Img" className="img-fluid"/>
                                 </span>
                             </i>
-                            <h4 className="text-dark">App Development </h4>
+                            <h4 className="text-dark">Web Design  </h4>
                             <p>
                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium aut reprehenderit voluptatum!
                             </p>    
@@ -86,7 +86,7 @@ const ServicePage = () => (
                                     <img src={icon3} alt="Img" className="img-fluid"/>
                                 </span>
                             </i>
-                            <h4 className="text-dark">App Development </h4>
+                            <h4 className="text-dark">Web Development </h4>
                             <p>
                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium aut reprehenderit voluptatum!
                             </p>    
@@ -97,7 +97,7 @@ const ServicePage = () => (
                                     <img src={icon4} alt="Img" className="img-fluid"/>
                                 </span>
                             </i>
-                            <h4 className="text-dark">App Development </h4>
+                            <h4 className="text-dark"> E-Commerce Development  </h4>
                             <p>
                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium aut reprehenderit voluptatum!
                             </p>    
@@ -108,7 +108,7 @@ const ServicePage = () => (
                                     <img src={icon5} alt="Img" className="img-fluid"/>
                                 </span>
                             </i>
-                            <h4 className="text-dark">App Development </h4>
+                            <h4 className="text-dark"> Digital Marketing &amp; Branding  </h4>
                             <p>
                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium aut reprehenderit voluptatum!
                             </p>    
@@ -130,9 +130,23 @@ const ServicePage = () => (
                 </div>
             </div>
         
-            <div className="testimonial mt-5 ">
 
+        <div className="container">
+            
+        <div className="alert alert-info shadow my-5">
+                <div className="p-lg-4 lead text-white">
+                <h4 className="fw-600 mb-4">
+                    LYB Technology | Web Services | Applications 
+                </h4>
+                LYB Technology is professional in providing best website designing, development, digital marketing and mobile app development services with 24*7 customer support. The main advantage of choosing us is that we are working by understanding the exact customer’s need so that they can get best services and can expand their business like a pro and see themselves unique from their competitors.
+                
+                <hr  className="my-4" />
+
+                <Link className="btn btn-outline-light shadow btn-lg rounded text-decoration-none ">Request a Callback </Link>
+                </div>
             </div>
+        </div>
+           
         </div>
     </Layout>
 )

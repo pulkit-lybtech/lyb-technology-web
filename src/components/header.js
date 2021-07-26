@@ -77,7 +77,7 @@ const Header = ({ siteTitle }) => {
                   <Link className="dropdown-item" to="/services/app-development">App Development</Link>
                   <Link className="dropdown-item" to="/services/e-commerce-development">E-Commerce Development</Link>
                   <Link className="dropdown-item" to="/services/erp-crm-development">ERP &amp; CRM Development</Link>
-                  <Link className="dropdown-item" to="/services/digital-marketing-branding">Digital Marketing &amp; Branding </Link>
+                  <Link className="dropdown-item" to="/services/digital-marketing">Digital Marketing &amp; Branding </Link>
                   <NavDropdown.Divider />
                   <Link className="dropdown-item" to="/services/ai-machine-learning">AI &amp; Machine Learning</Link>
                   <Link className="dropdown-item" to="/services"> All Services </Link>
